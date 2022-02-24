@@ -47,6 +47,7 @@ export class AppService {
     }
   }
   async createEvent(dto: any) {
-    console.log(dto);
+    console.log('test');
+    console.log(JSON.stringify(dto));
   }
 }

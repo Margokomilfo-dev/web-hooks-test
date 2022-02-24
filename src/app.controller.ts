@@ -17,6 +17,7 @@ export class AppController {
   //push notifications
   @Post('catch/all/events')
   createEvent(@Body() dto: any) {
+    console.log('in controller');
     return this.appService.createEvent(dto);
   }
 }
